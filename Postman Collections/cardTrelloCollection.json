@@ -306,7 +306,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://api.trello.com/1/cards/65227ae13b8add6f92ba9150?key={{APIKey}}&token={{APIToken}}&desc=Lista kroków testowania",
+					"raw": "https://api.trello.com/1/cards/65227ae13b8add6f92ba9150?key={{APIKey}}&token={{APIToken}}&desc=Lista kroków testowania&idLabels=652287b941fab3c2933c7b52",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -330,6 +330,10 @@
 						{
 							"key": "desc",
 							"value": "Lista kroków testowania"
+						},
+						{
+							"key": "idLabels",
+							"value": "652287b941fab3c2933c7b52"
 						}
 					]
 				}
@@ -351,7 +355,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://api.trello.com/1/cards/65227b7e226feaff0b938955?key={{APIKey}}&token={{APIToken}}&desc=Status testu",
+					"raw": "https://api.trello.com/1/cards/65227b7e226feaff0b938955?key={{APIKey}}&token={{APIToken}}&desc=Status testu&idLabels=65228846e4e27a4fbf60630a",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -375,6 +379,10 @@
 						{
 							"key": "desc",
 							"value": "Status testu"
+						},
+						{
+							"key": "idLabels",
+							"value": "65228846e4e27a4fbf60630a"
 						}
 					]
 				}
