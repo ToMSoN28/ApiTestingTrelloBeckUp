@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "c146821d-9793-4f40-ba72-eb9554f59d0a",
+		"name": "cardTrello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createNewCardOnToDoList",
+			"id": "e3dee853-2a27-4d6d-8e07-408c3d00fe86",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65227302ac3dd3e184ed3f41&key={{APIKey}}&token={{APIToken}}&name=Zadanie do wykonania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65227302ac3dd3e184ed3f41"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie do wykonania",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewCardOnInProgressList",
+			"id": "3aec6166-ab0a-405f-b35a-224c6385037e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=652272af1ca18b4c289d9829&key={{APIKey}}&token={{APIToken}}&name=Zadanie w trakcie wykonywania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "652272af1ca18b4c289d9829"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie w trakcie wykonywania",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewCardOnTestingList",
+			"id": "edea44a5-b8b4-4a93-8ff2-1b2a2fa792cc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65226f8c92ed7846f6b07966&key={{APIKey}}&token={{APIToken}}&name=Zadanie w trakcie testowania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65226f8c92ed7846f6b07966"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie w trakcie testowania",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewCardOnDoneList",
+			"id": "445b7448-5591-4def-b810-f4b43363d68b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=65226e2a86aab5d15b6c9542&key={{APIKey}}&token={{APIToken}}&name=Zadanie wykonane",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "65226e2a86aab5d15b6c9542"
+						},
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "name",
+							"value": "Zadanie wykonane",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCardOnToDoList",
+			"id": "e29e32c2-4378-418c-8c1d-741d7920f2a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227b1faba2a8934c840ffc?key={{APIKey}}&token={{APIToken}}&desc=Lista kroków do wykonania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227b1faba2a8934c840ffc"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "Lista kroków do wykonania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCardOnInProgressList",
+			"id": "5a62a924-fd3e-43a1-86f7-341eb0359078",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227a896045a656e2f3468e?key={{APIKey}}&token={{APIToken}}&desc=jakiś kod",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227a896045a656e2f3468e"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "jakiś kod"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCardOnTestingList",
+			"id": "0c0f5e6d-524e-4b48-aafd-2761ea15cff2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227ae13b8add6f92ba9150?key={{APIKey}}&token={{APIToken}}&desc=Lista kroków testowania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227ae13b8add6f92ba9150"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "Lista kroków testowania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCardOnDoneList",
+			"id": "4c409003-bf08-4f9d-bbeb-b40ca2c4a778",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/65227b7e226feaff0b938955?key={{APIKey}}&token={{APIToken}}&desc=Status testu",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"65227b7e226feaff0b938955"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{APIKey}}"
+						},
+						{
+							"key": "token",
+							"value": "{{APIToken}}"
+						},
+						{
+							"key": "desc",
+							"value": "Status testu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
